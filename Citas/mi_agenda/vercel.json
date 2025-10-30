@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ],
+  "env": {
+    "MAIL_SERVER": "smtp.gmail.com",
+    "MAIL_PORT": "587",
+    "MAIL_USE_TLS": "true",
+    "MAIL_USERNAME": "lmcg2910@gmail.com",
+    "MAIL_PASSWORD": "ynpy uzor jugt cpzk",
+    "MAIL_DEFAULT_SENDER": "lmcg2910@gmail.com",
+    "GOOGLE_CREDENTIALS": "@google_credentials"
+  }
+}
