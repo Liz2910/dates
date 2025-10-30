@@ -5,8 +5,8 @@ def enviar_correo(nombre, telefono, fecha, hora, nota):
     mail = Mail(current_app)
     msg = Message(
         subject="Nueva cita agendada",
-        sender="tucorreo@gmail.com",
-        recipients=["tucorreo@gmail.com"],
+        sender="lmcg2910@gmail.com",
+        recipients=["lmcg2910@gmail.com"],
         body=f"""
         Se ha agendado una nueva cita:
         Nombre: {nombre}
@@ -16,4 +16,5 @@ def enviar_correo(nombre, telefono, fecha, hora, nota):
         Nota: {nota}
         """
     )
+
     mail.send(msg)
